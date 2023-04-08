@@ -5,7 +5,7 @@ export abstract class CsvFileReader<T> {
 
   abstract mapRow (row: string[]): T
 
-  protected constructor (protected fileName: string) {}
+  constructor (protected fileName: string) {}
 
   read (): void {
     this.data = fs.readFileSync(this.fileName, {

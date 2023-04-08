@@ -1,7 +1,7 @@
 import { type MatchData } from './MatchData'
 import { WinAnalysis } from './analyzers/WinAnalyzer'
 import { HtmlReport } from './reports/HtmlReport'
-import { ConsoleReport } from ' ./reports/ConsoleReport '
+import { ConsoleReport } from './reports/ConsoleReport'
 
 export interface Analyzer {
   run: (matches: MatchData[]) => string
